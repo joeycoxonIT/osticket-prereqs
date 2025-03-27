@@ -41,7 +41,7 @@ Go to the searchbar at the top, type and select "virtual machines"
 Click create > select "azure virtual machine"
 </p>
 <p>
-<img src="" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/dELhKYF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 
 <br />
