@@ -22,10 +22,10 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Microsoft Azure
 - Virtual Machine
-- Remote Desktop Connection
+- osTicket Installation Files
 - Internet Information Services
+- PHP
 - MySQL
 
 <h2>Installation Steps</h2>
