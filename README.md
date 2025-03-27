@@ -33,7 +33,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 Go to the searchbar at the top, type and select "virtual machines"
 </p>
 <p>
-<img src="https://imgur.com/a/zx52nJD" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/x59vW1j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
