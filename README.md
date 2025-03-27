@@ -22,11 +22,12 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Virtual Machine
-- osTicket Installation Files
-- Internet Information Services
-- PHP
-- MySQL
+- Create a Virtual Machine in Azure
+- Install osTicket
+- Install HeidiSQL
+- Install MySQL
+- Install PHP
+- Install Microsoft C++ Redistributable
 
 <h2>Installation Steps</h2>
 <p>
