@@ -87,6 +87,13 @@ Next we will install IIS. Go to the search bar at the bottom of the screen and t
 <img src="https://i.imgur.com/bgFZ2T0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-<img src="https://i.imgur.com/nTycf4j.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/nTycf4j.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
 
+<p>
+After we’ve installed IIS, now it’s time to install PHP Manager. Go to the “osTicket Installation Files” folder located on your desktop. Then click “PHPManagerforIIS_V1.5.0”. Make sure to agree to terms and conditions.
+</p>
+<p>
+<img src="https://i.imgur.com/l08fcBY.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
