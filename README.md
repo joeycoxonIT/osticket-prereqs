@@ -92,8 +92,20 @@ Next we will install IIS. Go to the search bar at the bottom of the screen and t
 <br />
 
 <p>
-After we’ve installed IIS, now it’s time to install PHP Manager. Go to the “osTicket Installation Files” folder located on your desktop. Then click “PHPManagerforIIS_V1.5.0”. Make sure to agree to terms and conditions.
+After we’ve installed IIS, now it’s time to install PHP Manager. Go to the “osTicket Installation Files” folder located on your desktop. Then click “PHPManagerforIIS_V1.5.0”. Make sure to agree to terms and conditions. Do the same for “rewrite_amd64”.
 </p>
 <p>
 <img src="https://i.imgur.com/l08fcBY.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
+<p>
+<img src="https://i.imgur.com/o5di7bH.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+Next we will create a PHP directory. Go to the folder icon at the bottom of the screen. Right click it and then select “File Explorer”. Once you’re there, go to “This PC” and then select “Windows (C:), which is your “C” drive. Once you’re in your “C” drive, create a folder and name it “PHP”. Once that’s done, open your “osTicket Installation Files” folder and unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the PHP folder on your "C" drive.
+</p>
+<p>
+<img src="https://i.imgur.com/ObYACAh.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
