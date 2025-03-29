@@ -6,10 +6,6 @@
 This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
 
 
-<h2>Video Demonstration</h2>
-
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
-
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
@@ -145,8 +141,132 @@ Next we will open IIS as an Admin. Go to the search bar at the bottom left of th
 <img src="https://i.imgur.com/9BVoWWu.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once you have opened IIS, you will be welcomed to their “home screen” where you will see “PHP Manager”, click on it, then once you’re at the PHP Manager screen, click “Register new PHP Version”. Then click the browse icon (the “...” icon to the right of the search bar). Then click “This PC” -> “Windows (C:)” -> “PHP”. Then select the “php.cgi” file in the “PHP” folder and click "Open". At last, click “OK”.
+Once you have opened IIS, you will be welcomed to their “home screen” where you will see “PHP Manager”, click on it, then once you’re at the PHP Manager screen, click “Register new PHP Version”. Then click the “...” icon to the right of the search bar. Then click “This PC” -> “Windows (C:)” -> “PHP”. Then select the “php.cgi” file in the “PHP” folder and click "Open". At last, click “OK”.
 </p>
 <p>
 <img src="https://i.imgur.com/ugWZNZd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next we will Reload IIS. On the right of the page, you will see three options under “Manage Server”. Click “Stop”. Once this is done, wait a moment, then click “Start” to reload the web server.
+</p>
+<p>
+<img src="https://i.imgur.com/ObmJI92.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/tUp91qO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+Now it’s finally time to install osTicket. Open your “osTicket Installation Files” folder and unzip the compressed osTicket folder. Then we want to copy the “upload” folder into “c:\inetpub\wwwroot”. To do this, go to your osTicket folder and right click the “upload” folder and select “Copy”. Then go to your file explorer and select “This PC” -> “Windows (C:)” -> “inetpub” -> “wwwroot”. Once you’re in the “wwwroot” folder, paste the “upload” folder. Lastly, rename your "upload" folder to "osTicket".
+</p>
+<p>
+<img src="https://i.imgur.com/kiI7RiZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next we will reload the server again. Open "Internet Information Services (IIS) Manager". Click "Stop", wait a moment, then click "Start".
+</p>
+<p>
+<img src="https://i.imgur.com/ObmJI92.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/tUp91qO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+Now we will install extensions for osTicket. Open "Internet Information Services (IIS) Manager" if you closed it from the previous step. Click the arrow to the left of “Site”, then do the same for “Default Web Site”. Then click the “osTicket” folder and select “PHP Manager”. Once you’re in “PHP Manager”, select “Enable or disable an extension”. Then enable “php_imap.dll”, “php_intl.dll”, and “php_opcache.dll” by right clicking on them and selecting “Enable”.
+</p>
+<p>
+<img src="https://i.imgur.com/AYOLte4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/JRqrtrJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/7A6yxw7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now load osTicket into a browser using this link: “http://localhost/osTicket/setup/”. If your page looks like what’s displayed below, you’ve followed the steps correctly.
+</p>
+<img src="https://i.imgur.com/dRYCZd0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<br />
+
+<p>
+Next we will rename the “ost-sampleconfig.php” file. To navigate to it, go to “File Explorer -> “This PC” -> “Windows (C:)” -> “inetpub” -> “wwwroot” -> “osTicket” -> “include” then scroll down to where you see the “ost-sampleconfig.php” file and rename it to “ost-config.php”. After renaming the file, right-click it and select “Properties” -> “Security” -> “Advanced”, “Disable inheritance” then “Remove all inherited permissions”
+</p>
+<br />
+<p>
+Next, click “add” under permission entries.
+</p>
+<p>
+<img src="https://i.imgur.com/1W34PVn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Click “Select a principal”
+</p>
+<p>
+<img src="https://i.imgur.com/y3tyIig.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+In the text box above the “Advanced” button, add permissions for the admins of your company then press “OK”. However, for this tutorial, we will allow permissions for “everyone”.
+</p>
+<p>
+<img src="https://i.imgur.com/DLHZtdb.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Select the permissions you want to give. For this tutorial, we will check “Full Control”.
+</p>
+<p>
+<img src="https://i.imgur.com/mWFI6CJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Once all that’s done, click “Apply” then “OK” at the bottom right of the “permission entries” tab. Then click “OK” in the tab below.
+</p>
+<p>
+<img src="https://i.imgur.com/izaW4lk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<br />
+
+<p>
+Now that you have successfully given admin permissions, go back to the osTicket page in your browser then click “continue”, which will send you to the login info page. Once you’re there, create your account (note - the email for your “Admin User” account needs to be different from your “Help Desk User” email).
+</p>
+<br />
+
+<p>
+Once you have entered the login info for both accounts, you will find a third column called “Database Settings”. Before we enter anything, we need to go back to our “osTicket Installation Files” folder and install HeidiSQL
+</p>
+<p>
+<img src="https://i.imgur.com/WAFwt0d.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Once that’s done, make sure “Launch HeidiSQL” is checked then click “Finish.”
+</p>
+<p>
+<img src="https://i.imgur.com/S3xwxia.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+After you click finish, you will find an updates page. You can click “Skip” for now.
+</p>
+<br />
+<p>
+Now that you’re at the “Session manager” page, you want to create a new session. At the bottom left of the page, click “New” then type in your password for “MySQL Server”. Then click “Open” at the bottom of the page.
+</p>
+<p>
+<img src="https://i.imgur.com/52JOnIF.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Now we will create a database called “osTicket”. Right click “Unnamed” then select “Create new” -> “Database”. Once that’s done, name the database “osTicket”
+</p>
+<p>
+<img src="https://i.imgur.com/LmxYaMl.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/qtUIaaC.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Finally, go back to your “osTicket installer” page in your browser and enter your MySQL username and password. Once this is done, click Install.
+</p>
+<p>
+<img src="https://i.imgur.com/baX0cbT.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
