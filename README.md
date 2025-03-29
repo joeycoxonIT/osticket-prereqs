@@ -109,3 +109,13 @@ Next we will create a PHP directory. Go to the folder icon at the bottom of the 
 <img src="https://i.imgur.com/ObYACAh.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
+
+<p>
+Next, install the remaining files in the “osTicket Installation Files” folder: “vc_redist.x86” and “mysql-5.5.62-win32”. Note: when installing mySQL, make sure to select “Typical” Setup Type.
+</p>
+<p>
+<img src="https://i.imgur.com/PxNd8RM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+<img src="https://i.imgur.com/VfjpRSh.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
