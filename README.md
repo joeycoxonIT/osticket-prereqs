@@ -119,3 +119,20 @@ Next, install the remaining files in the “osTicket Installation Files” folde
 <p>
 <img src="https://i.imgur.com/VfjpRSh.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+<p>
+Now that mySQL is installed, make sure “Launch the MySQL Configuration Wizard” is checked and click “Finish”. Once you’re in the Configuration Wizard, make sure “Standard Configuration is selected and proceed.
+</p>
+<p>
+<img src="https://i.imgur.com/sfYEtHt.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Make sure “Modify Security Settings” is checked and create a password.
+</p>
+<p>
+<img src="https://i.imgur.com/wiWKv4n.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Once your password is created click Next -> Finish.
+</p>
