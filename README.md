@@ -136,3 +136,17 @@ Make sure “Modify Security Settings” is checked and create a password.
 <p>
 Once your password is created click Next -> Finish.
 </p>
+<br />
+
+<p>
+Next we will open IIS as an Admin. Go to the search bar at the bottom left of the screen and search for “Internet Information Services”. Once you see it, right click and “Run as administrator”.
+</p>
+<p>
+<img src="https://i.imgur.com/9BVoWWu.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Once you have opened IIS, you will be welcomed to their “home screen” where you will see “PHP Manager”, click on it, then once you’re at the PHP Manager screen, click “Register new PHP Version”. Then click the browse icon (the “...” icon to the right of the search bar). Then click “This PC” -> “Windows (C:)” -> “PHP”. Then select the “php.cgi” file in the “PHP” folder and click "Open". At last, click “OK”.
+</p>
+<p>
+<img src="https://i.imgur.com/ugWZNZd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
