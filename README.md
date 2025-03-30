@@ -270,3 +270,8 @@ Finally, go back to your “osTicket installer” page in your browser and enter
 <p>
 <img src="https://i.imgur.com/baX0cbT.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+<p>
+Congrats! You have now successfully installed osTicket.
+</p>
