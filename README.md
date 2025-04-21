@@ -26,8 +26,18 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 - Install Microsoft C++ Redistributable
 
 <h2>Installation Steps</h2>
+
+<h3>1) Create a Virtual Machine</h3>
 <p>
-Start by typing “virtual machines” in the search bar at the top of the page, then select “virtual machines” under “services”.
+  
+- In the search bar at the top of the page, type and select “virtual machines”
+- Once you’re at the virtual machines page, select “create” -> “Azure virtual machine”
+  - Create a resource group. For this tutorial, we will name it “osTicket”.
+  - Name the virtual machine “osticket-vm”
+  - Under “Administrator account” create a username and password
+  - Under "Image", select “Windows 10 Pro, Version 22H2, x64 Gen2”.
+  - "Under "Size", select an option with at least 2 vcpus and 16 GB of memory
+  - Once that's done, ensure the licensing box is checked, then click "Review + Create"
 </p>
 <p>
 <img src="https://i.imgur.com/x59vW1j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -42,10 +52,6 @@ After you’ve done so, you’re at the page that allows you to create a virtual
 </p>
 
 <br />
-
-<p>
-Now we will set up the resource group along with the virtual machine. For this tutorial, we’ll name the resource group “osTicket” and the virtual machine “osticket-vm”. Also create a username and password. For the image setting, select “Windows 10 Pro, Version 22H2, x64 Gen2”. For the “size” setting, ensure that the virtual machine has 2 vCPUs and 16 GB of memory. The settings on the following pages can remain unchanged, however, make sure to check the licensing box on the first page.
-</p>
 <p>
 <img src="https://i.imgur.com/Y3rtLJK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
