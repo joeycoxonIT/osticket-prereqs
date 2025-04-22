@@ -57,8 +57,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
   
 - Go back to the virtual machines page in Azure, then copy the Public IP address
-- Go the windows search bar at the bottom of your screen and open “Remote Desktop Connection”
-- Under “Computer” paste the Public IP address” then connect to the VM
+- Go the Windows search bar at the bottom of your screen and open “Remote Desktop Connection”
+- Under “Computer” paste the Public IP address then connect to the VM
 </p>
 <p>
 <img src="https://i.imgur.com/Y38Ab5W.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
@@ -70,13 +70,16 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h3>3) Install osTicket files within the Virtual Machine</h3>
 <p>
-After you've logged into your Remote Desktop, you can now download the osTicket file linked here: https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0. Copy and paste this link into a browser on your remote desktop. Once this is done, download and unzip the file within your remote desktop.
+
+- To download the osTicket Installation files, copy and paste this link: https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0 into a browser on your remote desktop
+- Once that's done, download and unzip the file within your remote desktop.
 </p>
 <p>
 <img src="https://i.imgur.com/opwiQ2P.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
+<h3>4) Install IIS</h3>
 <p>
 Next we will install IIS. Go to the search bar at the bottom of the screen and type in “control panel”. Once you’ve opened the control panel, click “uninstall programs”, then click “turn Windows features on or off”. Scroll to where you see “Internet Information Services”. Make sure it’s checked, then expand it -> “world wide web services” -> “Application Development Features”, then make sure “CGI” is checked. Once this is done, click “OK”.
 </p>
@@ -91,6 +94,7 @@ Next we will install IIS. Go to the search bar at the bottom of the screen and t
 </p>
 <br />
 
+<h3>5) Install PHP Manager</h3>
 <p>
 After we’ve installed IIS, now it’s time to install PHP Manager. Go to the “osTicket Installation Files” folder located on your desktop. Then click “PHPManagerforIIS_V1.5.0”. Make sure to agree to terms and conditions. Do the same for “rewrite_amd64”.
 </p>
@@ -102,6 +106,7 @@ After we’ve installed IIS, now it’s time to install PHP Manager. Go to the �
 </p>
 <br />
 
+<h3>6) Create a PHP directory</h3>
 <p>
 Next we will create a PHP directory. Go to the folder icon at the bottom of the screen. Right click it and then select “File Explorer”. Once you’re there, go to “This PC” and then select “Windows (C:), which is your “C” drive. Once you’re in your “C” drive, create a folder and name it “PHP”. Once that’s done, open your “osTicket Installation Files” folder and unzip PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) into the PHP folder on your "C" drive.
 </p>
@@ -110,8 +115,10 @@ Next we will create a PHP directory. Go to the folder icon at the bottom of the 
 </p>
 <br />
 
+<h3>7) Install remaining files</h3>
 <p>
-Next, install the remaining files in the “osTicket Installation Files” folder: “vc_redist.x86” and “mysql-5.5.62-win32”. Note: when installing mySQL, make sure to select “Typical” Setup Type.
+
+- Next, install the remaining files in the “osTicket Installation Files” folder: “vc_redist.x86” and “mysql-5.5.62-win32”. Note: when installing mySQL, make sure to select “Typical” Setup Type.
 </p>
 <p>
 <img src="https://i.imgur.com/PxNd8RM.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -119,39 +126,56 @@ Next, install the remaining files in the “osTicket Installation Files” folde
 <p>
 <img src="https://i.imgur.com/VfjpRSh.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
-
 <p>
-Now that mySQL is installed, make sure “Launch the MySQL Configuration Wizard” is checked and click “Finish”. Once you’re in the Configuration Wizard, make sure “Standard Configuration is selected and proceed.
+  
+- Now that mySQL is installed, make sure “Launch the MySQL Configuration Wizard” is checked and click “Finish”. Once you’re in the Configuration Wizard, make sure “Standard Configuration" is selected and proceed.
 </p>
 <p>
 <img src="https://i.imgur.com/sfYEtHt.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Make sure “Modify Security Settings” is checked and create a password.
+  
+- Make sure “Modify Security Settings” is checked and create a password.
 </p>
 <p>
 <img src="https://i.imgur.com/wiWKv4n.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once your password is created click Next -> Finish.
+  
+- Once your password is created click Next -> Finish.
 </p>
 <br />
 
+<h3>8) Launch IIS as an Admin</h3>
 <p>
-Next we will open IIS as an Admin. Go to the search bar at the bottom left of the screen and search for “Internet Information Services”. Once you see it, right click and “Run as administrator”.
+  
+- Go to the search bar at the bottom left of the screen and search for “Internet Information Services”.
+- Once you see it, right click and “Run as administrator”.
 </p>
 <p>
 <img src="https://i.imgur.com/9BVoWWu.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+<h3>9) Register PHP Manager</h3>
 <p>
-Once you have opened IIS, you will be welcomed to their “home screen” where you will see “PHP Manager”, click on it, then once you’re at the PHP Manager screen, click “Register new PHP Version”. Then click the “...” icon to the right of the search bar. Then click “This PC” -> “Windows (C:)” -> “PHP”. Then select the “php.cgi” file in the “PHP” folder and click "Open". At last, click “OK”.
+  
+- Once you are in IIS, click "PHP Manager"
+- Click “Register new PHP Version”.
+- Click the “...” icon to the right of the search bar.
+- Click “This PC” -> “Windows (C:)” -> “PHP”.
+- Then select the “php.cgi” file in the “PHP” folder and click "Open". At last, click “OK”.
 </p>
 <p>
 <img src="https://i.imgur.com/ugWZNZd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+<h3>10) Reload IIS</h3>
 <p>
-Next we will Reload IIS. On the right of the page, you will see three options under “Manage Server”. Click “Stop”. Once this is done, wait a moment, then click “Start” to reload the web server.
+  
+- On the right of the page, you will see three options under “Manage Server”. Click “Stop”.
+- Once this is done, wait a moment, then click “Start” to reload the web server.
 </p>
 <p>
 <img src="https://i.imgur.com/ObmJI92.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -161,8 +185,13 @@ Next we will Reload IIS. On the right of the page, you will see three options un
 </p>
 <br />
 
+<h3>11) Install osTicket</h3>
 <p>
-Now it’s finally time to install osTicket. Open your “osTicket Installation Files” folder and unzip the compressed osTicket folder. Then we want to copy the “upload” folder into “c:\inetpub\wwwroot”. To do this, go to your osTicket folder and right click the “upload” folder and select “Copy”. Then go to your file explorer and select “This PC” -> “Windows (C:)” -> “inetpub” -> “wwwroot”. Once you’re in the “wwwroot” folder, paste the “upload” folder. Lastly, rename your "upload" folder to "osTicket".
+
+- Open your “osTicket Installation Files” folder and unzip the compressed osTicket folder.
+- Then we want to copy the “upload” folder into “c:\inetpub\wwwroot”. To do this, go to your osTicket folder and right-click the “upload” folder and select “Copy”.
+- Then go to your file explorer and select “This PC” -> “Windows (C:)” -> “inetpub” -> “wwwroot”. Once you’re in the “wwwroot” folder, paste the “upload” folder.
+- Lastly, rename your "upload" folder to "osTicket".
 </p>
 <p>
 <img src="https://i.imgur.com/kiI7RiZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
