@@ -196,8 +196,12 @@ Next we will create a PHP directory. Go to the folder icon at the bottom of the 
 <p>
 <img src="https://i.imgur.com/kiI7RiZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+<h3>12) Reload IIS again</h3>
 <p>
-Next we will reload the server again. Open "Internet Information Services (IIS) Manager". Click "Stop", wait a moment, then click "Start".
+  
+- Open "Internet Information Services (IIS) Manager". Click "Stop", wait a moment, then click "Start".
 </p>
 <p>
 <img src="https://i.imgur.com/ObmJI92.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -207,8 +211,12 @@ Next we will reload the server again. Open "Internet Information Services (IIS) 
 </p>
 <br />
 
+<h3>13) Install osTicket Extensions</h3>
 <p>
-Now we will install extensions for osTicket. Open "Internet Information Services (IIS) Manager" if you closed it from the previous step. Click the arrow to the left of “Site”, then do the same for “Default Web Site”. Then click the “osTicket” folder and select “PHP Manager”. Once you’re in “PHP Manager”, select “Enable or disable an extension”. Then enable “php_imap.dll”, “php_intl.dll”, and “php_opcache.dll” by right clicking on them and selecting “Enable”.
+
+- Open "Internet Information Services (IIS) Manager" if you closed it from the previous step.
+- Click the arrow to the left of “Site”, then do the same for “Default Web Site”. Then click the “osTicket” folder and select “PHP Manager”.
+- Once you’re in “PHP Manager”, select “Enable or disable an extension”. Then enable “php_imap.dll”, “php_intl.dll”, and “php_opcache.dll” by right-clicking on them and selecting “Enable”.
 </p>
 <p>
 <img src="https://i.imgur.com/AYOLte4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -219,14 +227,21 @@ Now we will install extensions for osTicket. Open "Internet Information Services
 <p>
 <img src="https://i.imgur.com/7A6yxw7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
+<br />
+
+<h3>14) Launch osTicket Site</h3>
 <p>
-Now load osTicket into a browser using this link: “http://localhost/osTicket/setup/”. If your page looks like what’s displayed below, you’ve followed the steps correctly.
+  
+- Now load osTicket into a browser using this link: “http://localhost/osTicket/setup/”. If your page looks like what’s displayed below, you’ve followed the steps correctly.
 </p>
 <img src="https://i.imgur.com/dRYCZd0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 
+<h3>15) Rename "ost-config.php"</h3>
 <p>
-Next we will rename the “ost-sampleconfig.php” file. To navigate to it, go to “File Explorer -> “This PC” -> “Windows (C:)” -> “inetpub” -> “wwwroot” -> “osTicket” -> “include” then scroll down to where you see the “ost-sampleconfig.php” file and rename it to “ost-config.php”. After renaming the file, right-click it and select “Properties” -> “Security” -> “Advanced”, “Disable inheritance” then “Remove all inherited permissions”
+  
+- Go to “File Explorer -> “This PC” -> “Windows (C:)” -> “inetpub” -> “wwwroot” -> “osTicket” -> “include”, then scroll down to where you see the “ost-sampleconfig.php” file and rename it to “ost-config.php”.
+- After renaming the file, right-click it and select “Properties” -> “Security” -> “Advanced”, “Disable inheritance”, then “Remove all inherited permissions”
 </p>
 <br />
 <p>
