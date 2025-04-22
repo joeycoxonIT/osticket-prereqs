@@ -232,7 +232,7 @@ Next we will create a PHP directory. Go to the folder icon at the bottom of the 
 <h3>14) Launch osTicket Site</h3>
 <p>
   
-- Now load osTicket into a browser using this link: “http://localhost/osTicket/setup/”. If your page looks like what’s displayed below, you’ve followed the steps correctly.
+- Load osTicket into a browser using this link: “http://localhost/osTicket/setup/”. If your page looks like what’s displayed below, you’ve followed the steps correctly.
 </p>
 <img src="https://i.imgur.com/dRYCZd0.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
@@ -244,67 +244,84 @@ Next we will create a PHP directory. Go to the folder icon at the bottom of the 
 - After renaming the file, right-click it and select “Properties” -> “Security” -> “Advanced”, “Disable inheritance”, then “Remove all inherited permissions”
 </p>
 <br />
+
+<h3>Assign permissions in "ost-config.php"</h3>
 <p>
-Next, click “add” under permission entries.
+
+- After renaming "ost-config.php", right-click it and select “Properties” -> “Security” -> “Advanced”, “Disable inheritance”, then “Remove all inherited permissions”
+- Next, click “add” under permission entries.
 </p>
 <p>
 <img src="https://i.imgur.com/1W34PVn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Click “Select a principal”
+  
+- Click “Select a principal”
 </p>
 <p>
 <img src="https://i.imgur.com/y3tyIig.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-In the text box above the “Advanced” button, add permissions for the admins of your company then press “OK”. However, for this tutorial, we will allow permissions for “everyone”.
+  
+- In the text box above the “Advanced” button, add permissions for admins, then press “OK”. However, for this tutorial, we will allow permissions for “everyone”.
 </p>
 <p>
 <img src="https://i.imgur.com/DLHZtdb.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Select the permissions you want to give. For this tutorial, we will check “Full Control”.
+  
+- Select the permissions you want to give. For this tutorial, we will enable “Full Control”.
 </p>
 <p>
 <img src="https://i.imgur.com/mWFI6CJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once all that’s done, click “Apply” then “OK” at the bottom right of the “permission entries” tab. Then click “OK” in the tab below.
+  
+- Once all that’s done, click “Apply” then “OK” at the bottom right of the “permission entries” tab. Then click “OK” in the tab below.
 </p>
 <p>
 <img src="https://i.imgur.com/izaW4lk.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 
+<h3>16) Continue osTicket Setup</h3>
 <p>
-Now that you have successfully given admin permissions, go back to the osTicket page in your browser then click “continue”, which will send you to the login info page. Once you’re there, create your account (note - the email for your “Admin User” account needs to be different from your “Help Desk User” email).
+  
+- Go back to the osTicket page in your browser and click “continue”, which will send you to the login info page.
+- Create your account (note - the email for your “Admin User” account needs to be different from your “Help Desk User” email).
 </p>
 <br />
 
+<h3>17) Install HeidiSQL</h3>
 <p>
-Once you have entered the login info for both accounts, you will find a third column called “Database Settings”. Before we enter anything, we need to go back to our “osTicket Installation Files” folder and install HeidiSQL
+
+- Once you have entered the login info for both accounts, you will find a third column called “Database Settings”. Before entering anything, go back to the “osTicket Installation Files” folder and install HeidiSQL
 </p>
 <p>
 <img src="https://i.imgur.com/WAFwt0d.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once that’s done, make sure “Launch HeidiSQL” is checked then click “Finish.”
+  
+- Once that’s done, ensure “Launch HeidiSQL” is checked then click “Finish.”
 </p>
 <p>
 <img src="https://i.imgur.com/S3xwxia.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After you click finish, you will find an updates page. You can click “Skip” for now.
+
+- After you click finish, you will find an updates page. You can click “Skip” for now.
 </p>
 <br />
 <p>
-Now that you’re at the “Session manager” page, you want to create a new session. At the bottom left of the page, click “New” then type in your password for “MySQL Server”. Then click “Open” at the bottom of the page.
+  
+- Now that you’re at the “Session manager” page, you want to create a new session. At the bottom left of the page, click “New” then type in your password for “MySQL Server”. Then click “Open” at the bottom of the page.
 </p>
 <p>
 <img src="https://i.imgur.com/52JOnIF.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Now we will create a database called “osTicket”. Right click “Unnamed” then select “Create new” -> “Database”. Once that’s done, name the database “osTicket”
+
+- Now we will create a database called “osTicket”. Right click “Unnamed” then select “Create new” -> “Database”. Once that’s done, name the database “osTicket”
 </p>
 <p>
 <img src="https://i.imgur.com/LmxYaMl.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
@@ -312,8 +329,12 @@ Now we will create a database called “osTicket”. Right click “Unnamed” t
 <p>
 <img src="https://i.imgur.com/qtUIaaC.png" height="50%" width="50%" alt="Disk Sanitization Steps"/>
 </p>
+
+<h3>18) Finish osTicket Setup</h3>
 <p>
-Finally, go back to your “osTicket installer” page in your browser and enter your MySQL username and password. Once this is done, click Install.
+
+- Finally, go back to your “osTicket installer” page in your browser and enter your MySQL username and password.
+- Once this is done, click Install.
 </p>
 <p>
 <img src="https://i.imgur.com/baX0cbT.png" height="70%" width="70%" alt="Disk Sanitization Steps"/>
