@@ -42,16 +42,9 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 <img src="https://i.imgur.com/x59vW1j.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-<br />
-
-<p>
-After you’ve done so, you’re at the page that allows you to create a virtual machine. Select “create” -> “Azure virtual machine”.
-</p>
 <p>
 <img src="https://i.imgur.com/dELhKYF.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
-
-<br />
 <p>
 <img src="https://i.imgur.com/Y3rtLJK.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -60,8 +53,12 @@ After you’ve done so, you’re at the page that allows you to create a virtual
 </p>
 <br />
 
+<h3>2) Connect to the Virtual Machine</h3>
 <p>
-After you’ve created the virtual machine, go to the search bar within the task bar at the bottom of your screen and enter “remote desktop connection”. Click on it, then type the virtual machine’s public IP address, which you will find it listed in your virtual machine page in Azure, once that's done, click "Connect".
+  
+- Go back to the virtual machines page in Azure, then copy the Public IP address
+- Go the windows search bar at the bottom of your screen and open “Remote Desktop Connection”
+- Under “Computer” paste the Public IP address” then connect to the VM
 </p>
 <p>
 <img src="https://i.imgur.com/Y38Ab5W.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
@@ -71,6 +68,7 @@ After you’ve created the virtual machine, go to the search bar within the task
 </p>
 <br />
 
+<h3>3) Install osTicket files within the Virtual Machine</h3>
 <p>
 After you've logged into your Remote Desktop, you can now download the osTicket file linked here: https://drive.usercontent.google.com/download?id=1b3RBkXTLNGXbibeMuAynkfzdBC1NnqaD&export=download&authuser=0. Copy and paste this link into a browser on your remote desktop. Once this is done, download and unzip the file within your remote desktop.
 </p>
