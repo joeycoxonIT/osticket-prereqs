@@ -36,7 +36,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   - Name the virtual machine “osticket-vm”
   - Under “Administrator account” create a username and password
   - Under "Image", select “Windows 10 Pro, Version 22H2, x64 Gen2”.
-  - "Under "Size", select an option with at least 2 vcpus and 16 GB of memory
+  - "Under "Size", select an option with at least 2 vCPUs
   - Once that's done, ensure the licensing box is checked, then click "Review + Create"
 </p>
 <p>
