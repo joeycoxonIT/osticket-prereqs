@@ -359,6 +359,4 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 <br />
 
-<p>
-Congratulations! You have now successfully installed osTicket.
-</p>
+<h3>Congratulations! You have now successfully installed osTicket.</h3>
